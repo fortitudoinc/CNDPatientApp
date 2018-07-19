@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".Symptoms" />
         <activity android:name=".Confirm" />
-        <activity android:name=".Finish"></activity>
+        <activity android:name=".Finish" />
+        <activity android:name=".SubmissionError"></activity>
     </application>
 
 </manifest>

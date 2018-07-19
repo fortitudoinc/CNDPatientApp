@@ -18,8 +18,16 @@ public class Confirm extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void goToFinish(View view){
-        Intent intent = new Intent(Confirm.this, Finish.class);
-        startActivity(intent);
+    public void submit(View view){
+        boolean submit_success = true;
+
+        if(submit_success){
+            Intent intent = new Intent(Confirm.this, Finish.class);
+            startActivity(intent);
+        }else{
+            Intent intent = new Intent(Confirm.this, SubmissionError.class);
+            startActivity(intent);
+        }
+
     }
 }
