@@ -8,4 +8,8 @@
     <string name="phoneLabel">Phone Number</string>
     <string name="symptomsLabel">How can we help?</string>
     <string name="summary">SUMMARY</string>
+    <string name="success">SUCCESS!</string>
+    <string name="successFollowUp1">A doctor will contact you at the number you provided shortly</string>
+    <string name="successFollowUp2">Please call xxxx if you have any questions</string>
+    <string name="quit">QUIT</string>
 </resources>
