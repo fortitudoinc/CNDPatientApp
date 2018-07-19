@@ -6,4 +6,5 @@
     <string name="mainTitle">REQUEST CONSULT</string>
     <string name="nameLabel">Patient Name</string>
     <string name="phoneLabel">Phone Number</string>
+    <string name="symptomsLabel">How can we help?</string>
 </resources>
