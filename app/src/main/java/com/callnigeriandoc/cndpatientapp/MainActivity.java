@@ -13,8 +13,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void goToSymptoms(View view){
-        Intent intent = new Intent(MainActivity.this, Symptoms.class);
+    public void goToConfirm(View view){
+        Intent intent = new Intent(MainActivity.this, Confirm.class);
         startActivity(intent);
     }
 }

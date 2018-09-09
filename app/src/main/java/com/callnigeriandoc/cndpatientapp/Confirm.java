@@ -13,11 +13,6 @@ public class Confirm extends AppCompatActivity {
         setContentView(R.layout.activity_confirm);
     }
 
-    public void goToSymptoms(View view){
-        Intent intent = new Intent(Confirm.this, Symptoms.class);
-        startActivity(intent);
-    }
-
     public void submit(View view){
         boolean submit_success = true;
 
