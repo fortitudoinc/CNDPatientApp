@@ -13,6 +13,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void validateAndSave(View view){
+
+    }
+
     public void goToConfirm(View view){
         Intent intent = new Intent(MainActivity.this, Confirm.class);
         startActivity(intent);

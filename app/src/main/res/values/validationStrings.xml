@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="firstNameEmpty">First name cannot be empty</string>
+    <string name="lastNameEmpty">Last name cannot be empty</string>
+    <string name="genderEmpty">A gender must be selected</string>
+    <string name="phoneNumberEmpty">Phone number cannot be empty</string>
+</resources>
