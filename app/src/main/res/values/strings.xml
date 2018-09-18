@@ -4,7 +4,8 @@
     <string name="previous">PREVIOUS</string>
     <string name="submit">SUBMIT</string>
     <string name="mainTitle">REQUEST CONSULT</string>
-    <string name="nameLabel">Patient Name</string>
+    <string name="firstnameLabel">First Name</string>
+    <string name="lastnameLabel">Last Name</string>
     <string name="phoneLabel">Phone Number</string>
     <string name="symptomsLabel">How can we help?</string>
     <string name="summary">SUMMARY</string>
