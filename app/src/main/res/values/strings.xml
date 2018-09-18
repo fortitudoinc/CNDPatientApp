@@ -13,4 +13,7 @@
     <string name="successFollowUp1">A doctor will contact you at the number you provided shortly</string>
     <string name="successFollowUp2">Please call xxxx if you have any questions</string>
     <string name="quit">QUIT</string>
+    <string name="radioMale">Male</string>
+    <string name="radioFemale">Female</string>
+    <string name="genderLabel">Gender</string>
 </resources>
