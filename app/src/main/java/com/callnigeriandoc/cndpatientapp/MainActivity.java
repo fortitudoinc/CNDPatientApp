@@ -28,20 +28,28 @@ public class MainActivity extends AppCompatActivity {
         try{
             RadioGroup genderRadioGroup = findViewById(R.id.genderVal);
             int genderId = genderRadioGroup.getCheckedRadioButtonId();
-            View checkedGenderRadioButtonView = genderRadioGroup.findViewById(genderId); // Check for NPE here?
+            View checkedGenderRadioButtonView = genderRadioGroup.findViewById(genderId);
             int checkedGenderRadioButtonId = genderRadioGroup.indexOfChild(checkedGenderRadioButtonView);
             RadioButton checkedGenderRadioButton = (RadioButton) genderRadioGroup.getChildAt(checkedGenderRadioButtonId);
             selectedGender = (String) checkedGenderRadioButton.getText();
-        }catch(NullPointerException e){
+        }catch(NullPointerException e){ // NPE if radio button not checked (no default value by design)
             selectedGender = "";
         }
 
         PseudoPerson p = new PseudoPerson(firstName, lastName, phoneNumber, selectedGender);
         ArrayList<Integer> errors = p.getErrors();
 
+        if(errors.size() == 0){
+            goToConfirm(view, p);
+        }else{
+            // TODO: Display errors on view somehow
+
+        }
+
     }
 
-    public void goToConfirm(View view){
+    public void goToConfirm(View view, PseudoPerson patient){
+        // TODO: pass patient data to confirm activity somehow?
         Intent intent = new Intent(MainActivity.this, Confirm.class);
         startActivity(intent);
     }
