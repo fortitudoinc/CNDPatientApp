@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="firstNameVal" type="id"/>
+    <item name="lastNameVal" type="id"/>
+    <item name="phoneNumberVal" type="id"/>
+    <item name="genderVal" type="id"/>
+</resources>

@@ -6,32 +6,32 @@ public class PseudoPerson {
     private String firstName;
     private String lastName;
     private String phoneNumber;
-    private char gender;
+    private String gender;
 
-    public PseudoPerson(String fname, String lname, String pNumber, char g){
+    public PseudoPerson(String fname, String lname, String pNumber, String g){
         firstName = fname;
         lastName = lname;
         phoneNumber = pNumber;
         gender = g;
     }
 
-    public ArrayList<String> getErrors(){
-        ArrayList<String> ret = new ArrayList<String>();
+    public ArrayList<Integer> getErrors(){
+        ArrayList<Integer> ret = new ArrayList<Integer>();
 
         if(firstName.isEmpty()){
-            ret.add("@string/firstNameEmpty");
+            ret.add(R.string.firstNameEmpty);
         }
 
         if(lastName.isEmpty()){
-            ret.add("@string/lastNameEmpty");
+            ret.add(R.string.lastNameEmpty);
         }
 
         if(phoneNumber.isEmpty()){
-            ret.add("@string/phoneNumberEmpty");
+            ret.add(R.string.phoneNumberEmpty);
         }
 
-        if(gender != 'M' && gender != 'F'){
-            ret.add("@string/genderEmpty");
+        if(!gender.equals("Male") && !gender.equals("Female")){ // TODO: Make these string resources?
+            ret.add(R.string.genderEmpty);
         }
 
         return ret;
