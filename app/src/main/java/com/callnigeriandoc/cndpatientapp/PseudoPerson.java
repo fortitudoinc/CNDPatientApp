@@ -16,6 +16,22 @@ public class PseudoPerson implements Serializable{
         gender = g;
     }
 
+    public String getFirstName(){
+        return firstName;
+    }
+
+    public String getLastName(){
+        return lastName;
+    }
+
+    public String getPhoneNumber(){
+        return phoneNumber;
+    }
+
+    public String getGender(){
+        return gender;
+    }
+
     public ArrayList<Integer> getErrors(){
         ArrayList<Integer> ret = new ArrayList<Integer>();
 
@@ -36,5 +52,9 @@ public class PseudoPerson implements Serializable{
         }
 
         return ret;
+    }
+
+    public void pushToOpenMRS(){
+        // TODO
     }
 }

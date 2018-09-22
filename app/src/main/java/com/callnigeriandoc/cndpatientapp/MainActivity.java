@@ -49,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToConfirm(View view, PseudoPerson patient){
-        // TODO: pass patient data to confirm activity somehow?
         Intent intent = new Intent(MainActivity.this, Confirm.class);
         Bundle bundle = new Bundle();
         bundle.putSerializable("patientData", patient);

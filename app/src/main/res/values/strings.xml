@@ -16,4 +16,6 @@
     <string name="radioMale">Male</string>
     <string name="radioFemale">Female</string>
     <string name="genderLabel">Gender</string>
+    <string name="confirmAccept">FINISH</string>
+    <string name="confirmGoBack">BACK</string>
 </resources>
