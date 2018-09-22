@@ -11,6 +11,18 @@ public class Confirm extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_confirm);
+
+        Intent intent = this.getIntent();
+        Bundle bundle = intent.getExtras();
+
+        try {
+            PseudoPerson patient = (PseudoPerson) bundle.getSerializable("patientData");
+            System.out.println(patient.getErrors());
+        }catch(NullPointerException e){
+            // TODO: Display some kind of error message
+            System.out.println("There was a problem retrieving patient data");
+        }
+
     }
 
     public void submit(View view){

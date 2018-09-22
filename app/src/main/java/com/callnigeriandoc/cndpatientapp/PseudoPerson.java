@@ -1,8 +1,9 @@
 package com.callnigeriandoc.cndpatientapp;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class PseudoPerson {
+public class PseudoPerson implements Serializable{
     private String firstName;
     private String lastName;
     private String phoneNumber;
