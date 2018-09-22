@@ -8,7 +8,7 @@ public class PseudoPerson {
     private String phoneNumber;
     private String gender;
 
-    public PseudoPerson(String fname, String lname, String pNumber, String g){
+    PseudoPerson(String fname, String lname, String pNumber, String g){
         firstName = fname;
         lastName = lname;
         phoneNumber = pNumber;
